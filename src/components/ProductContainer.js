@@ -2,9 +2,9 @@
 //All
 
 import React, {useState, useEffect} from "react";
+import AddProduct from "./AddProduct";
 
-
-import ProductCard from "./ProductCard"
+import ProductList from "./ProductList";
 
 
 function ProductContainer(){
@@ -17,10 +17,12 @@ function ProductContainer(){
     .then((products) => setProducts(products))
   }, [])
   console.log(products)
+
+ 
     return(
         <>
-                
-        <ProductCard />
+        <AddProduct addProduct = {addProduct}/>        
+        <ProductList products = {products}/>
         
         </>
     )
