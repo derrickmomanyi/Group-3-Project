@@ -2,6 +2,7 @@
 //Gloria
 
 import React, {useState} from 'react'
+import "./AddProduct.css"
 
 
 function AddProduct({ addNewProduct }){
@@ -49,6 +50,7 @@ function AddProduct({ addNewProduct }){
 
     return(
         <div className = 'ui segment' onSubmit = {handleSubmit}>
+            Add Product:
          <form className = 'ui form'>
             <div className = 'four wide field'>
 

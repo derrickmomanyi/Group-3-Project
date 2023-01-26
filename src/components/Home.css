@@ -1,0 +1,22 @@
+.home {
+    background-image: url(https://wallpaperaccess.com/full/1496231.jpg);
+    background-size: "cover";
+    height: 100vh;
+    margin-top: -70px;    
+    background-repeat:no-repeat;
+}
+
+.phrase {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Square Peg', cursive;
+    font-style: italic;
+    float: left;
+  
+
+}

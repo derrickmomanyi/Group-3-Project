@@ -1,5 +1,6 @@
 
 import React from 'react';
+import "./About.css"
 
 
 
@@ -8,9 +9,9 @@ function About(){
 
 
     return(
-        <>
-        <h4>Write an about and add styling</h4>
-        </>
+        <div className='about'>
+        <p className='text'>Buy Less ,choose well, make it last</p>
+        </div>
     
     )
 }

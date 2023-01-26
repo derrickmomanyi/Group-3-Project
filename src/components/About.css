@@ -1,0 +1,15 @@
+.about {
+    background-image: url(https://thumbs.dreamstime.com/b/christmas-shopping-woman-walking-bags-background-61609501.jpg);
+    background-size: "cover";
+    height: 100vh;
+    margin-top: -70px;    
+    background-repeat:no-repeat;
+}
+
+.text {
+  
+    font-size: 2.5em;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
