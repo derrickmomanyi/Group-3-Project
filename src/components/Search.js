@@ -10,9 +10,9 @@ function Search({search, setSearch}){
           placeholder="Search by Name"
           onChange = {(e)=> setSearch(e.target.value)}
           value= {search}
-          >
-           
-          </input>
+          />
+          
+          <i className="circular search link icon"></i>
       </div>
     )
 

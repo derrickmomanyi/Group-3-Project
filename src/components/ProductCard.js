@@ -1,9 +1,10 @@
 //component to display fetched data from server
 //Derick
 import React, { useState } from 'react'
-import ShoppingList from './ShoppingList';
 
-function ProductCard({ name, price, image,  description, category, rating}){
+
+
+function ProductCard({ title, price, image,  description, category, rating}){
   
   const [isAddedToCart, setIsAddedToCart] = useState(true);
  
@@ -17,12 +18,12 @@ function ProductCard({ name, price, image,  description, category, rating}){
    
    <div className=" column">    
     <div className="ui card ">
-      <div className=" image">
+      <div className=" ui medium image">
         <img alt="product!" src={image} />
       </div>
       <div className="content">
         <div className="header">
-          {name}         
+          {title}         
           
          
         </div>
@@ -51,7 +52,7 @@ function ProductCard({ name, price, image,  description, category, rating}){
       </div>
     </div>
   </div>
-  <ShoppingList category = {category}/>
+  
  
         </>
     )

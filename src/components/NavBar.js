@@ -4,19 +4,28 @@ import { NavLink } from 'react-router-dom';
 function NavBar(){
     return (
         <div >
-            <div className="ui tabular menu">
+            <div className="ui menu">
                
-                 <h2>Designer Wear</h2>
-                <NavLink to='/'>Home </NavLink>
-                <NavLink to='/addproduct'>Add Product</NavLink>
+                 <h3>Designer Wear</h3>
+                 <div>
+                  
+                        <NavLink to='/'>Home </NavLink>
+                        <NavLink to='/products'>Products</NavLink>
+                        <NavLink to='/addproduct'>Add Product</NavLink> 
+                        <NavLink to='/about'>About</NavLink> 
+                        {/* <div class="right menu">
+                            <a class="item">Logout</a>
+                            </div> */}
+                            </div>
+                        
+                                </div>
                 
-                <NavLink to='/search'>Search</NavLink>
+                
+                               
+                
             
-                
-                
-                
-                
-        </div>
+          
+       
         </div>
 
 
