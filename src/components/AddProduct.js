@@ -1,6 +1,7 @@
 //component to add products to json
 //Gloria
 
+<<<<<<< HEAD
 import React, {useState} from 'react'
 function AddProduct({addProduct}){
 
@@ -114,3 +115,5 @@ function AddProduct({addProduct}){
 
 
 
+=======
+>>>>>>> a0bcd9864b41be4a13f702fb189a88b27677affb
