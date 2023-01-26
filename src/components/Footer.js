@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css"
 
 function Footer(){
     return(
@@ -7,17 +8,21 @@ function Footer(){
                 <div className="column">
                     <h3>CONTACTS</h3>
                     <ul className="list">
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <p>Tel: 0712345678</p>
+                        <p>Email: thriftshop@gmail.com</p>
+                        
                     </ul>
                 </div>
                 <div className="column">
                     <h3>SOCIAL MEDIA</h3>
-                    <ul className="list">
-                        <li></li>
-                        <li></li>
-                    </ul>
+                   
+                        <div>
+                         <i aria-hidden="true" class="twitter icon">@thrift_shop</i>
+                      </div>
+                        <div>
+                        <i aria-hidden="true" class="instagram icon">@thrift_shop</i>
+                        </div>
+                    
                 </div>
             </div>
             <div className="row">

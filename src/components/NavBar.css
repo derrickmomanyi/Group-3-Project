@@ -1,0 +1,22 @@
+.ui.container.menu  {
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 2rem;
+    font-style: black;
+   
+  }
+
+ .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    font-family: cursive;
+    cursor: pointer;
+ }
+
+ .nav{
+   color: black ;
+ }

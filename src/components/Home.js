@@ -1,11 +1,12 @@
 import React  from "react";
+import "./Home.css"
 
 function Home(){
     return (
-        <>
-        <h2>Add styling to a nice home page</h2>
+        <div className="home">
+        <h2 className="phrase"> Keep the Swag Alive At Your Comfort</h2>
         
-        </>
+        </div>
     )
 }
 
