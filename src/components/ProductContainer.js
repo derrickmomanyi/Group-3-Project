@@ -17,7 +17,7 @@ function ProductContainer(){
   
 
   useEffect(() => {
-    fetch("http://localhost:8002/products")
+    fetch("http://localhost:8002/prohttps://json-products-server.onrender.com/products")
     .then((res) => res.json())
     .then((products) => setProducts(products))
   }, [])

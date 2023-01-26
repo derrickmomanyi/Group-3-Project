@@ -32,7 +32,7 @@ function AddProduct({ addNewProduct }){
            
         }
 
-        fetch('http://localhost:8002/products', {
+        fetch('https://json-products-server.onrender.com/products', {
 
         method:'POST',
 
