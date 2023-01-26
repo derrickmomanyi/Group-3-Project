@@ -18,6 +18,11 @@ function ProductContainer(){
   }, [])
   console.log(products)
 
+  function addProduct(newProduct) {
+    const updatedProduct = [...products, newProduct]
+    setProducts(updatedProduct)
+  }
+
  
     return(
         <>
