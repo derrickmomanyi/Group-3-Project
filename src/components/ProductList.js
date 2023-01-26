@@ -1,9 +1,17 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-function ProductList({products}){
-
-    const displayProducts = products.map((product) => (
+function ProductList({products, search}){
+   
+   
+   
+    
+   
+    const displayProducts = products
+    .filter((product) => product.title.toLowerCase().includes(search.toLowerCase()))
+    
+    
+    .map((product) => (
      <ProductCard 
       key = {product.id} 
     name = {product.title} 
@@ -12,14 +20,28 @@ function ProductList({products}){
     category = {product.category}
     image = {product.image}
     rating = {product.rating.rate}
-    count = {product.rating.count}
+    
+    
      
      />
+    
+
+    
+
+   
     ))
+
+
+
+    
     return(
-        <>
+        <div className = "ui four column grid">
+          <div className='row'>
+            
         {displayProducts}
-        </>
+       
+        </div>
+        </div>
     )
 }
 

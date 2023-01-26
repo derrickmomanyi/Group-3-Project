@@ -2,9 +2,18 @@
 //Jackline
 import React from "react";
 
-function Search(){
+function Search({search, setSearch}){
     return (
-        <h1>Search</h1>
+        
+      <div className="ui icon input">
+          <input type= "text"
+          placeholder="Search by Name"
+          onChange = {(e)=> setSearch(e.target.value)}
+          value= {search}
+          >
+           
+          </input>
+      </div>
     )
 
 }
