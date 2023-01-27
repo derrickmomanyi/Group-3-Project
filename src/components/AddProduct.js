@@ -2,9 +2,13 @@
 //Gloria
 
 import React, {useState} from 'react'
-function AddProduct({addProduct}){
+import "./AddProduct.css"
 
-    const [name , setName] = useState('')
+
+function AddProduct({ addNewProduct }){
+
+   
+    const [title , setTitle] = useState('')
     const [price , setPrice] = useState('')
     const [image, setImage] = useState('')    
     const [description , setDescription] = useState('')
@@ -19,16 +23,16 @@ function AddProduct({addProduct}){
 
         const newProduct = {
             
-            name: name,
+            title: title,
             price: price,
-            image: image,
             description: description,
             category: category,
+            image: image,           
             rating: rating,
            
         }
 
-        fetch('http://localhost:8002/products', {
+        fetch('https://json-products-server.onrender.com/products', {
 
         method:'POST',
 
@@ -40,20 +44,21 @@ function AddProduct({addProduct}){
      })
      
      .then((resp)=> resp.json())
-     .then((newProduct)=> addProduct(newProduct))
+     .then((product) => addNewProduct(product))
 
     }
 
     return(
         <div className = 'ui segment' onSubmit = {handleSubmit}>
+           
          <form className = 'ui form'>
             <div className = 'four wide field'>
-
+            <h2>Add Product:</h2>
             <input type ='text'
-                name ='name'
-                value = {name}
+                name ='title'
+                value = {title}
                 placeholder = 'Enter Product Name'
-                onChange ={(e) => setName(e.target.value)}
+                onChange ={(e) => setTitle(e.target.value)}
                 
                 />
             <input type ='number'
@@ -63,27 +68,28 @@ function AddProduct({addProduct}){
                 onChange ={(e) => setPrice(e.target.value)}
                 
                 />
-             <input type ='text'
-                name ='image'
-                value = {image}
-                placeholder = 'Enter Image Link'
-                onChange ={(e) => setImage(e.target.value)}
-                
-                />
-            <input type ='text'
+                <input type ='text'
                 name ='description'
                 placeholder = 'Enter Product Description'
                 value = {description}
                 onChange ={(e) => setDescription(e.target.value) }
                 
                 />
-            <input type ='text'
+                <input type ='text'
                 name ='category'
                 placeholder = 'Enter Product Category'
                 value = {category}
                 onChange ={(e) => setCategory(e.target.value)}
                 
                 />
+             <input type ='text'
+                name ='image'
+                value = {image}
+                placeholder = 'Enter Image Link'
+                onChange ={(e) => setImage(e.target.value)}
+                
+                />            
+            
             <input type ='number'
                 name ='rating'
                 placeholder = 'Enter Rating'
@@ -92,16 +98,15 @@ function AddProduct({addProduct}){
                 onChange ={(e) => setRating(e.target.value)}
                 
                 />
-                
+                 <button className = 'ui button' type ='submit'>Add Product</button>
                 </div>
-                <button className = 'ui button' type ='submit'>Submit</button>
+               
              </form>
              </div>
+             
     )
     }
     export default AddProduct;
-
-
 
 
 

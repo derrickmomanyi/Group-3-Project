@@ -1,52 +1,59 @@
 //component to display fetched data from server
 //Derick
-import React from 'react'
+import React, { useState } from 'react'
 
-function ProductCard({ name, price, image,  description, category, rating, count}){
 
+
+function ProductCard({ title, price, image,  description, category, rating}){
+  
+  const [isAddedToCart, setIsAddedToCart] = useState(true);
+ 
+  function handleClick(){
+   setIsAddedToCart((isAddedToCart) => !isAddedToCart)
+}
+    
    
     return(
         <>
-   <div className="ui column ">
-    <div
-      className="ui card"
-            
-    >
-      <div className="image">
+   
+   <div className=" column">    
+    <div className="ui card " >
+      <div className=" ui medium image">
         <img alt="product!" src={image} />
       </div>
       <div className="content">
         <div className="header">
-          {name}
-          
+          {title}         
           
          
         </div>
         <div className="meta text-wrap">
           <p>Category: {category}</p>
         <p>Price: Ksh {price}</p>
-          <small>{description}</small>
+          <small>Description: {description}</small>
         </div>
       </div>
       <div className="extra content">
         
-          <div className="ui center aligned segment basic">
+          <div className="ui center aligned segment basic ">
           <p>Rating: {rating}/5</p>
             
             <button
-              className="ui mini red button"
-              // onClick={() =>
-              //   console.log("add buy button function")
-              // }
+              className= {isAddedToCart ? "ui mini orange button" : "ui mini red button" }
+              onClick={handleClick}
+              
             >
-              Add To Cart
+              <i className= "icon cart"></i>
+              {isAddedToCart ? "Add To" : "Remove From" } Cart
             </button>
-            <p>{count} items left</p> 
+            
           </div>
        
       </div>
     </div>
   </div>
+  
+ 
         </>
     )
 }

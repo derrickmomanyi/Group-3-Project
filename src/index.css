@@ -1,9 +1,7 @@
-
-
-
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
 }
 
@@ -11,12 +9,11 @@ body {
   word-wrap: break-word;
 }
 
-
-
 .ui.grid  {
   flex-wrap: nowrap;
   min-height: 100%;
   padding: 0px 20px;
+  display: grid;
 }
 
 .column {

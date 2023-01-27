@@ -2,32 +2,42 @@
 //All
 
 import React, {useState, useEffect} from "react";
+
+import Search from "./Search";
+import ProductList from "./ProductList";
 import AddProduct from "./AddProduct";
 
-import ProductList from "./ProductList";
 
 
 function ProductContainer(){
 
   const [products, setProducts] = useState([])
+  const [search, setSearch] = useState("")
+  
+  
 
   useEffect(() => {
-    fetch("http://localhost:8002/products")
+    fetch("https://json-products-server.onrender.com/products")
     .then((res) => res.json())
     .then((products) => setProducts(products))
   }, [])
-  console.log(products)
 
-  function addProduct(newProduct) {
+  console.log(products);
+
+  function addNewProduct(newProduct) {
     const updatedProduct = [...products, newProduct]
     setProducts(updatedProduct)
   }
 
+  console.log(addNewProduct)
  
     return(
         <>
-        <AddProduct addProduct = {addProduct}/>        
-        <ProductList products = {products}/>
+        
+        <Search search = {search} setSearch = {setSearch}/>               
+        <ProductList products = {products} search = {search} />
+        <AddProduct addNewProduct={addNewProduct}/>
+        
         
         </>
     )

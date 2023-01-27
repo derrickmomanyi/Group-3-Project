@@ -239,6 +239,42 @@
         "rate": 3.6,
         "count": 145
       }
+    },
+    {
+      "name": "mens shirt",
+      "price": "22.3",
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket",
+      "category": "men's clothing",
+      "rating": "4.1",
+      "id": 21
+    },
+    {
+      "name": "mens shirt",
+      "price": "22.3",
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket",
+      "category": "men's clothing",
+      "rating": "4.1",
+      "id": 22
+    },
+    {
+      "name": "backpack",
+      "price": "100",
+      "image": "https://www.dataworld.co.ke/wp-content/uploads/2021/09/Lenovo-15.6-inch-laptop-Backpack-B210-GX40Q17227-scaled.jpg",
+      "description": "Casual and stylish design",
+      "category": "Lenovo 15.6″ inch laptop Backpack B210 (GX40Q17227)",
+      "rating": "4.2",
+      "id": 23
+    },
+    {
+      "name": "mens shirt",
+      "price": "22.3",
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket",
+      "category": "men's clothing",
+      "rating": "4.1",
+      "id": 24
     }
   ]
 }
