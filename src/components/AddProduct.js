@@ -32,7 +32,7 @@ function AddProduct({ addNewProduct }){
            
         }
 
-        fetch('https://json-products-server.onrender.com/products', {
+        fetch('http://localhost:8002/products', {
 
         method:'POST',
 
@@ -50,10 +50,10 @@ function AddProduct({ addNewProduct }){
 
     return(
         <div className = 'ui segment' onSubmit = {handleSubmit}>
-            Add Product:
+           
          <form className = 'ui form'>
             <div className = 'four wide field'>
-
+            <h2>Add Product:</h2>
             <input type ='text'
                 name ='title'
                 value = {title}
@@ -98,11 +98,12 @@ function AddProduct({ addNewProduct }){
                 onChange ={(e) => setRating(e.target.value)}
                 
                 />
-                
+                 <button className = 'ui button' type ='submit'>Add Product</button>
                 </div>
-                <button className = 'ui button' type ='submit'>Add Product</button>
+               
              </form>
              </div>
+             
     )
     }
     export default AddProduct;

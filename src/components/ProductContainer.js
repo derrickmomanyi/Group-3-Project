@@ -17,12 +17,12 @@ function ProductContainer(){
   
 
   useEffect(() => {
-    fetch("http://localhost:8002/prohttps://json-products-server.onrender.com/products")
+    fetch("http://localhost:8002/products")
     .then((res) => res.json())
     .then((products) => setProducts(products))
   }, [])
 
-  
+  console.log(products);
 
   function addNewProduct(newProduct) {
     const updatedProduct = [...products, newProduct]

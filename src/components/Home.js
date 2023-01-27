@@ -4,7 +4,8 @@ import "./Home.css"
 function Home(){
     return (
         <div className="home">
-        <h2 className="phrase"> Keep the Swag Alive At Your Comfort</h2>
+        <h1 className="phrase"> Keep the Swag Alive At Your Comfort</h1>
+        <h1 className="phrase2"> Drip is temporary, Class is Forever</h1>
         
         </div>
     )

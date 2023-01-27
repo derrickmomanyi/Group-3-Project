@@ -1,6 +1,7 @@
 //search component to search by description
 //Jackline
 import React from "react";
+import "./Search.css"
 
 function Search({search, setSearch}){
     return (
