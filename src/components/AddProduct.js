@@ -52,60 +52,84 @@ function AddProduct({ addNewProduct }){
     }
 
     return(
-        <div className = 'ui segment' onSubmit = {handleSubmit}>
-           
-         <form className = 'ui form'>
-            <div className = 'four wide field'>
-            <h2>Add Product:</h2>
-            <input type ='text'
-                name ='title'
-                value = {title}
-                placeholder = 'Enter Product Name'
-                onChange ={(e) => setTitle(e.target.value)}
+        <div className= "form">
                 
-                />
-            <input type ='number'
-                name ='price'
-                value = {price}
-                placeholder = 'Enter Price in Shillings'
-                onChange ={(e) => setPrice(e.target.value)}
+         <form onSubmit = {handleSubmit}>
+        <div className="form-group">
+
+            <label>Title</label>
+            <input type="text" 
+            name ='title' 
+            value = {title}
+             className="form-control" 
+             placeholder="Enter Product Name" 
+             onChange ={(e) => setTitle(e.target.value)}/>
+        
+        </div>
+
+        <div className="form-group">
+            <label>Price</label>
+            <input type="number"
+             name ='price'
+              value = {price}
+               className="form-control"
+                placeholder="Enter Price in Shillings"
+                 onChange ={(e) => setPrice(e.target.value)}/>
+        </div>
+
+        <div className="form-group">
+            <label>Description</label>
+            <input type="text" 
+            name ='description'
+             value = {description} 
+             className="form-control" 
+             placeholder="Enter Product Description" 
+             onChange ={(e) => setDescription(e.target.value)}/>
+        </div>
+
+        
+        <div className="form-group">
+            <label>Image</label>
+            <input type="text" 
+            name ='image' 
+            value = {image} 
+            className="form-control"
+             placeholder="Enter Image Link" 
+             onChange ={(e) => setImage(e.target.value)}/>
+        </div>
+
+        <div className="form-group">
+            <label>Rating</label>
+            <input type="number" 
+            name ='rating' 
+            value = {rating} 
+            className="form-control" 
+            placeholder="Enter Rating" 
+            step = '0.1' 
+            onChange ={(e) => setRating(e.target.value)}/>
+        </div>
+
+        <div>
+        <label className="mr-sm-2" for="inlineFormCustomSelect">Category</label>
+        <select className="custom-select mr-sm-2"  id="inlineFormCustomSelect"
+        onChange ={(e) => setCategory(e.target.value)}
+        name ='category' 
+        value = {category}  >
+        <option selected>Choose...</option>
+        <option value="Men's Clothing">Men's Clothing</option>
+        <option value="Women's Clothing">Women's Clothing</option>
+        
+      </select>
+          
+        </div>
+
+
+        
+        <button type="submit" className="btn btn-primary">Submit</button>
+        </form>
                 
-                />
-                <input type ='text'
-                name ='description'
-                placeholder = 'Enter Product Description'
-                value = {description}
-                onChange ={(e) => setDescription(e.target.value) }
-                
-                />
-                <input type ='text'
-                name ='category'
-                placeholder = 'Enter Product Category'
-                value = {category}
-                onChange ={(e) => setCategory(e.target.value)}
-                
-                />
-             <input type ='text'
-                name ='image'
-                value = {image}
-                placeholder = 'Enter Image Link'
-                onChange ={(e) => setImage(e.target.value)}
-                
-                />            
-            
-            <input type ='number'
-                name ='rating'
-                placeholder = 'Enter Rating'
-                step = '0.01'
-                value = {rating}
-                onChange ={(e) => setRating(e.target.value)}
-                
-                />
-                 <button className = 'ui button' type ='submit'>Add Product</button>
                 </div>
-               
-             </form>
-             </div>
+           
              
     )
     }

@@ -1,17 +1,4 @@
-.about {
-    background-image: url(https://st4.depositphotos.com/5653638/40616/i/1600/depositphotos_406160128-stock-photo-cheerful-indian-family-shopping-diwali.jpg);
-    background-size: "cover";
-    height: 100vh;
-    margin-top: -70px;    
-    background-repeat:no-repeat;
-}
-
-.text {
-  
-    font-size: 1.3em;
-    position: absolute;    
-    top: 10%;
-    left: 0%;
-     background-color: black;
-     color: white;
+.p {
+   font-size: 1.2em;
+   text-align: center;
 }
