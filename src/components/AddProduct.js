@@ -2,7 +2,10 @@
 //Gloria
 
 import React, {useState} from 'react'
-import "./AddProduct.css"
+import "../css/AddProduct.css"
+
+
+
 
 
 function AddProduct({ addNewProduct }){
@@ -32,7 +35,7 @@ function AddProduct({ addNewProduct }){
            
         }
 
-        fetch('https://json-products-server.onrender.com/products', {
+        fetch('http://localhost:8002/products', {
 
         method:'POST',
 
