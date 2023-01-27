@@ -119,7 +119,7 @@ function Footer(){
   
   <div className="text-center p-4">
     © 2023 Copyright:
-    <a className="text-reset fw-bold" href="https://mdbootstrap.com/">GROUP 3 PHOENIX</a>
+    <a className="text-reset fw-bold" href="https://github.com/derrickmomanyi/Group-3-Project">GROUP 3 PHOENIX</a>
   </div>
  
 </footer>
