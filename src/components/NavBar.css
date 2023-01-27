@@ -7,14 +7,17 @@
     font-size: 2rem;
     font-style: black;
    
+
+   
   }
 
  .title {
     font-size: 3rem;
     font-weight: bold;
-    color: black;
+    color: orange;
     font-family: cursive;
     cursor: pointer;
+    background-color: black;
  }
 
  .nav{

@@ -1,6 +1,7 @@
 //component to display fetched data from server
 //Derick
 import React, { useState } from 'react'
+import "./ProductCard.css"
 
 
 
@@ -17,7 +18,7 @@ function ProductCard({ title, price, image,  description, category, rating}){
         <>
    
    <div className=" column">    
-    <div className="ui card ">
+    <div className="ui card " >
       <div className=" ui medium image">
         <img alt="product!" src={image} />
       </div>
