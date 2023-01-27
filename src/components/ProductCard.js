@@ -16,43 +16,41 @@ function ProductCard({ title, price, image,  description, category, rating}){
    
     return(
         <>
-   
-   <div className=" column">    
-    <div className="ui card " >
-      <div className=" ui medium image">
-        <img alt="product!" src={image} />
-      </div>
-      <div className="content">
-        <div className="header">
-          {title}         
-          
-         
-        </div>
-        <div className="meta text-wrap">
-          <p>Category: {category}</p>
-        <p>Price: Ksh {price}</p>
-          <small>Description: {description}</small>
-        </div>
-      </div>
-      <div className="extra content">
         
-          <div className="ui center aligned segment basic ">
-          <p>Rating: {rating}/5</p>
+        
             
+        <div class="col-sm-3"> 
+        <div className="card" style={{width: "18rem"}}>
+            <img className="card-img-top " src={image} alt={title} />
+            <div className="card-body">
+              <h5 className="card-title">{title}</h5>
+              <p className="card-text">{description}</p>
+            </div>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">Price: Ksh {price}</li>
+              <li className="list-group-item">Section: {category}</li>
+              <li className="list-group-item">Rating: {rating}/5</li>
+            </ul>
+            <div className="card-body">
             <button
               className= {isAddedToCart ? "ui mini orange button" : "ui mini red button" }
               onClick={handleClick}
-              
+              id = "btn"
             >
               <i className= "icon cart"></i>
               {isAddedToCart ? "Add To" : "Remove From" } Cart
             </button>
-            
-          </div>
-       
-      </div>
-    </div>
-  </div>
+              
+            </div>
+            </div>
+</div>
+
+        
+        
+        
+        
+   
+
   
  
         </>

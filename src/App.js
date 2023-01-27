@@ -5,8 +5,8 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import AddProduct from "./components/AddProduct";
 import  About  from "./components/About";
-import Home from "./components/Home";
 import Footer from "./components/Footer";
+import AddToCart from "./components/AddToCart";
 
 
 
@@ -21,10 +21,11 @@ function App() {
       
 
       <Routes>
-        <Route path="/" element ={<Home />}/>
+        
         <Route path="addproduct" element ={ <AddProduct   />}/>
         <Route path="products" element = {<ProductContainer />} />       
         <Route path="about" element ={ <About />}/>
+        <Route path="addtocart" element = { <AddToCart />} />
     
         
        

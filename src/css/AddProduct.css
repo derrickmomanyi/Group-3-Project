@@ -12,3 +12,11 @@
    left: 50%;
    transform: translate(-50%, -50%)
 }
+
+.form {
+    
+        width: 50%;
+        height: 400%;
+        margin-left: 25%;
+   
+}

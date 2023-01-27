@@ -39,14 +39,15 @@ function ProductList({products, search}){
     
     return(
       
-        <div className = "ui four column grid">
-          <div className='row'>
+       
+        
+         <div className='row '>
+          {displayProducts}
+          </div> 
             
-        {displayProducts}
+       
       
        
-        </div>
-        </div>
     )
 }
 

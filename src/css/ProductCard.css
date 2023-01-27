@@ -1,3 +1,21 @@
-/* .column {
+#btn {
+    margin-left: 4%;
+}
 
-} */
+.card{
+    
+    margin: 0 auto; 
+    
+    margin-bottom: 10px;
+   
+    font-family: sans-serif;
+    font-style: italic;   
+    
+    text-align: center;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}

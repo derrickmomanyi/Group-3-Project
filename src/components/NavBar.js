@@ -7,13 +7,14 @@ function NavBar(){
         <div className='Nav'>
             
             <div className="ui container menu  ">
-            <h3 className="title">Designer Wear</h3>
+            <h3 className="title">Thrift Shop</h3>
                  
                                    
-                        <NavLink to='/' className="nav">Home </NavLink>
+                       
                         <NavLink to='/products' className="nav">Products</NavLink>
                         <NavLink to='/addproduct' className="nav">Add Product</NavLink> 
                         <NavLink to='/about' className="nav">About</NavLink> 
+                        <NavLink to='addtocart' className='nav'>Add To Cart</NavLink>
                         {/* <div class="right menu">
                             <a class="item">Logout</a>
                             </div> */}

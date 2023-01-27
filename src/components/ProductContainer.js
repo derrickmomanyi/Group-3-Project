@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import Search from "./Search";
 import ProductList from "./ProductList";
 import AddProduct from "./AddProduct";
-
+import "../css/ProductContainer.css"
 
 
 function ProductContainer(){
@@ -20,7 +20,7 @@ function ProductContainer(){
 
 
   useEffect(() => {
-    fetch("http://localhost:8002/products")
+    fetch("https://json-products-server.onrender.com/products")
     .then((res) => res.json())
     .then((products) => setProducts(products))
   }, [])
@@ -33,16 +33,14 @@ function ProductContainer(){
     
   }
  
-  // function addProduct(){
-  //   navigate("/addproduct", <AddProduct addNewProduct = {addNewProduct} />) 
-  // }
+  
  
     return(
         <>
          
         <Search search = {search} setSearch = {setSearch}/>               
         <ProductList products = {products} search = {search} />
-        {<button onClick={() => navigate("/addproduct", <AddProduct addNewProduct = {addNewProduct} />)}></button> }
+        {<button className = "btn" onClick={() => navigate("/addproduct", <AddProduct addNewProduct = {addNewProduct} />)}>Go to Add Product</button> }
         
         
         
