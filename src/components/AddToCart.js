@@ -12,7 +12,7 @@ function AddToCart({setIsInCart, isInCart, handleChange}){
 
     const handleUnits = () => {
         let x = 0;
-        isInCart.map((product) => (x += product.amount * product.price));
+        isInCart.map((product) => parseInt(x += product.amount * product.price));
         setUnits(x);
       };
 
@@ -23,8 +23,8 @@ function AddToCart({setIsInCart, isInCart, handleChange}){
     const displayProductsInCart = isInCart.map((product) => {
         return(
             (
-            <div className="col-sm-3"> 
-            <div className="card" style={{width: "18rem"}} key = {product.id}>
+            <div className="col-sm-3" key = {product.id}> 
+            <div className="card" style={{width: "18rem"}} >
                 <img className="card-img-top " src={product.image} alt={product.title} />
                 <div className="card-body">
                   <h5 className="card-title">{product.title}</h5>
