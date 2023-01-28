@@ -47,6 +47,12 @@ function AddProduct({ addNewProduct }){
      .then((product)=> addNewProduct(product))
 
      alert("Your Product Has Been Submitted, Check The Home Page")
+     setCategory('')
+     setDescription('')
+     setImage('')
+     setPrice('')
+     setRating('')
+     setTitle('')
 
     }
 
