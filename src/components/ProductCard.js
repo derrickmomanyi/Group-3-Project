@@ -5,18 +5,12 @@ import "../css/ProductCard.css"
 
 
 
-function ProductCard({ title, price, image,  description, category, rating}){
-  
-  const [isAddedToCart, setIsAddedToCart] = useState(true);
- 
-  function handleClick(){
-   setIsAddedToCart((isAddedToCart) => !isAddedToCart)
-}
-    
+function ProductCard({ title, price, image,  description, category, rating, product, handleClick}){
+     ;
    
     return(
         <>
-        
+      
         
             
         <div className="col-sm-3"> 
@@ -32,14 +26,7 @@ function ProductCard({ title, price, image,  description, category, rating}){
               <li className="list-group-item">Rating: {rating}/5</li>
             </ul>
             <div className="card-body">
-            <button
-              className= {isAddedToCart ? "ui mini orange button" : "ui mini red button" }
-              onClick={handleClick}
-              id = "btn"
-            >
-              <i className= "icon cart"></i>
-              {isAddedToCart ? "Add To" : "Remove From" } Cart
-            </button>
+            <button onClick={() => handleClick(product)} className='ui mini orange button' id="btn" >+ Add To Cart</button>
               
             </div>
             </div>

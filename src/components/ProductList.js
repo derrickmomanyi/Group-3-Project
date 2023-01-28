@@ -3,7 +3,7 @@ import ProductCard from './ProductCard';
 import "../css/ProductList.css"
 
 
-function ProductList({products, search}){ 
+function ProductList({products, search, handleClick}){ 
   console.log(products)
   
       
@@ -23,7 +23,9 @@ function ProductList({products, search}){
     category = {product.category}
     image = {product.image}
     rating = {product.rating}
-    
+    handleClick = {handleClick}
+    product = {product}
+      
     
      
      />
