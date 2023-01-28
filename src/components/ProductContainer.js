@@ -10,10 +10,10 @@ import AddProduct from "./AddProduct";
 import "../css/ProductContainer.css"
 
 
-function ProductContainer(){
+function ProductContainer({handleClick}){
 
   
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState([])  
   const [search, setSearch] = useState("")
   const navigate = useNavigate();
   
@@ -33,14 +33,15 @@ function ProductContainer(){
     
   }
  
-  
  
     return(
         <>
          
         <Search search = {search} setSearch = {setSearch}/>               
-        <ProductList products = {products} search = {search} />
-        {<button className = "btn" onClick={() => navigate("/addproduct", <AddProduct addNewProduct = {addNewProduct} />)}>Go to Add Product</button> }
+        <ProductList products = {products} search = {search} handleClick = {handleClick} />            
+        <button className = "btn" onClick={() => navigate("/addproduct", <AddProduct addNewProduct = {addNewProduct} />)}>Go to Add Product</button>         
+        
+        
         
         
         

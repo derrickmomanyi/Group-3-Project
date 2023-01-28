@@ -5,9 +5,6 @@ import React, {useState} from 'react'
 import "../css/AddProduct.css"
 
 
-
-
-
 function AddProduct({ addNewProduct }){
 
    
@@ -48,6 +45,8 @@ function AddProduct({ addNewProduct }){
      
      .then((resp)=> resp.json())
      .then((product)=> addNewProduct(product))
+
+     alert("Your Product Has Been Submitted, Check The Home Page")
 
     }
 
@@ -110,12 +109,12 @@ function AddProduct({ addNewProduct }){
         </div>
 
         <div>
-        <label className="mr-sm-2" for="inlineFormCustomSelect">Category</label>
+        <label className="mr-sm-2" >Category</label>
         <select className="custom-select mr-sm-2"  id="inlineFormCustomSelect"
         onChange ={(e) => setCategory(e.target.value)}
         name ='category' 
         value = {category}  >
-        <option selected>Choose...</option>
+        <option >Choose...</option>
         <option value="Men's Clothing">Men's Clothing</option>
         <option value="Women's Clothing">Women's Clothing</option>
         

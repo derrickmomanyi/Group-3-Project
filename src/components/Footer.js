@@ -104,7 +104,7 @@ function Footer(){
           <p><i className="fas fa-home me-3"></i> Nairobi,  10012, KENYA</p>
           <p>
             <i className="fas fa-envelope me-3"></i>
-            info@example.com
+            thriftshop@gmail.com
           </p>
           <p><i className="fas fa-phone me-3"></i> + 254 70 234 567 8</p>
           <p><i className="fas fa-print me-3"></i> + 254 70 432 765 9</p>
