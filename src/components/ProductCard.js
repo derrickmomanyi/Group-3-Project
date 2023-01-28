@@ -1,6 +1,6 @@
 //component to display fetched data from server
 //Derick
-import React, { useState } from 'react'
+import React from 'react'
 import "../css/ProductCard.css"
 
 
